@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:orientation="horizontal"
+        android:background="@drawable/wave__1_" />
+
+    <Button
+        android:id="@+id/evaluate_button"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:text="@string/evaluate_button" />
+
+    <Button
+        android:id="@+id/show_graph_button"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:text="@string/show_graph_button" />
+
+    <Button
+        android:id="@+id/contact_doctor_button"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:text="@string/contact_doctor_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/wave" />
+</LinearLayout>
