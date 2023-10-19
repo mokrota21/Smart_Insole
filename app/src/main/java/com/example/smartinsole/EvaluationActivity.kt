@@ -11,6 +11,10 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import androidx.activity.ComponentActivity
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.gif.GifDrawable
+import com.bumptech.glide.request.target.DrawableImageViewTarget
+import com.bumptech.glide.request.transition.Transition
 
 
 class EvaluationActivity : ComponentActivity() {
@@ -50,11 +54,14 @@ class EvaluationActivity : ComponentActivity() {
 
         val tmp: Button = findViewById(R.id.button)
         tmp.setOnClickListener {
-            val imageView = findViewById<ImageView>(R.id.loadingImageView)
-            val bar = addLoadingBar(this@EvaluationActivity, imageLayout)
-            Thread.sleep(3000)
-            removeLoadingBar(imageLayout, bar)
-            imageView.setImageResource(R.drawable.feet)
+            val gifImageView = findViewById<ImageView>(R.id.loadingImageView)
+//            val bar = addLoadingBar(this@EvaluationActivity, imageLayout)
+//            Thread.sleep(3000)
+//            removeLoadingBar(imageLayout, bar)
+            Glide.with(this)
+                .asGif() // Specify that the resource is a GIF
+                .load(R.drawable.feet_loading) // Replace with your GIF resource
+                .into(gifImageView)
         }
 
 
