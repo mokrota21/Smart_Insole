@@ -33,5 +33,11 @@ class MainActivity : ComponentActivity() {
             val i: Intent = EvaluationActivity.newIntent(this@MainActivity)
             startActivity(i)
         }
+
+        mShowGraphButton = findViewById(R.id.show_graph_button)
+        mShowGraphButton.setOnClickListener {
+            val i: Intent = ShowProgressActivity.newIntent(this@MainActivity)
+            startActivity(i)
+        }
     }
 }
