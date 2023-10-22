@@ -74,4 +74,5 @@ dependencies {
     annotationProcessor("com.github.bumptech.glide:compiler:4.14.1")
 
     implementation ("com.diogobernardino:williamchart:3.10.1")
+
 }

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.SmartInsole"
         tools:targetApi="31">
         <activity
+            android:name=".PreEvaluationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.theme.AdjustActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShowProgressActivity"
             android:exported="false" />
         <activity

@@ -13,15 +13,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.smartinsole.ui.theme.AdjustActivity
 import com.example.smartinsole.ui.theme.SmartInsoleTheme
 
 class MainActivity : ComponentActivity() {
     private lateinit var mEvaluationButton: Button
     private lateinit var mShowGraphButton: Button
+    private lateinit var mAdjustButton: Button
     private lateinit var mContactButton: Button
 
     private lateinit var mEvaluationLauncher: ActivityResultLauncher<Intent>
     private lateinit var mShowGraphLauncher: ActivityResultLauncher<Intent>
+    private lateinit var mAdjustLauncher: ActivityResultLauncher<Intent>
     private lateinit var mContactLauncher: ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,5 +42,12 @@ class MainActivity : ComponentActivity() {
             val i: Intent = ShowProgressActivity.newIntent(this@MainActivity)
             startActivity(i)
         }
+
+        mAdjustButton = findViewById(R.id.adjust_button)
+        mAdjustButton.setOnClickListener {
+            val i: Intent = AdjustActivity.newIntent(this@MainActivity)
+            startActivity(i)
+        }
+
     }
 }
