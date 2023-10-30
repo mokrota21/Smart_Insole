@@ -17,7 +17,7 @@ import com.example.smartinsole.ui.theme.AdjustActivity
 import com.example.smartinsole.ui.theme.SmartInsoleTheme
 
 class MainActivity : ComponentActivity() {
-    private lateinit var mEvaluationButton: Button
+    private lateinit var mPreEvaluationButton: Button
     private lateinit var mShowGraphButton: Button
     private lateinit var mAdjustButton: Button
     private lateinit var mContactButton: Button
@@ -31,9 +31,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
-        mEvaluationButton = findViewById(R.id.evaluate_button)
-        mEvaluationButton.setOnClickListener {
-            val i: Intent = EvaluationActivity.newIntent(this@MainActivity)
+        mPreEvaluationButton = findViewById(R.id.evaluate_button)
+        mPreEvaluationButton.setOnClickListener {
+            val i: Intent = PreEvaluationActivity.newIntent(this@MainActivity)
             startActivity(i)
         }
 

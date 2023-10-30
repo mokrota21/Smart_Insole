@@ -5,5 +5,7 @@
     <string name="contact_doctor_button"> Contact </string>
     <string name="adjust_button"> Adjust </string>
     <string name="latest_result_button"> Latest result </string>
+    <string name="qr_evaluation_description"> QR code for evaluation </string>
     <string name="qr_adjustment_description"> QR code for adjustment </string>
+    <string name="instruction_pre_evaluation"> Scan QR code at evaluation machine. After scanning press on QR code and follow instruction on the screen to get your feet scanned and evaluated </string>
 </resources>

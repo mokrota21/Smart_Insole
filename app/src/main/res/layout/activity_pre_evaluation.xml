@@ -4,6 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PreEvaluationActivity">
+    tools:context=".ui.theme.AdjustActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:background="@drawable/wave__1_"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/qr_code_image_view_pre"
+        android:src="@drawable/qr_code"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toTopOf="@+id/latest_result_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/qr_evaluation_description"/>
+
+    <TextView
+        android:id="@+id/latest_result_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/custom_text"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/instruction_pre_evaluation"
+        android:textAllCaps="false"
+        android:textColor="#FFD900"
+        android:layout_marginBottom="100dp"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wave"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
