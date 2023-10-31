@@ -23,7 +23,7 @@ class PreEvaluationActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pre_evaluation)
 
-        mQRImageView = findViewById(R.id.qr_code_image_view_pre)
+        mQRImageView = findViewById<ImageView>(R.id.qr_code_image_view_pre)
         mQRImageView.setOnClickListener {
             val i: Intent = EvaluationActivity.newIntent(this@PreEvaluationActivity)
             startActivity(i)
